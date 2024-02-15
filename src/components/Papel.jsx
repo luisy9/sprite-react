@@ -6,7 +6,7 @@ const Papel = ({ canvas, mida, clickCell }) => {
     <div>
       <h1>Este es el papel</h1>
       <div className=''>
-        <Canvas canvas={canvas} clickCell={clickCell} />
+        <Canvas canvas={canvas} clickCell={clickCell} mida={mida} />
       </div>
     </div>
   )
