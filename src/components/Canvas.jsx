@@ -1,11 +1,16 @@
 import Celda from './Celda';
 
-const Canvas = ({ c, canvas, mida }) => {
+const Canvas = ({ canvas, mida, clickCell }) => {
 
     return (
         <div className='flex justify-center'>
-            <div className="grid grid-cols-5">
-                {canvas.map((m, index) => <Celda key={index} m={m} />)}
+            <div className="grid grid-cols-10">
+                {canvas.map((m, index) => <Celda key={index}
+                    x={index}
+                    m={m}
+                    mida={mida}
+                    clickCell={clickCell} />
+                )}
             </div>
         </div>
 

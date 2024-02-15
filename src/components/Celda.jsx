@@ -1,6 +1,9 @@
-const Celda = ({ m }) => {
+const Celda = ({ clickCell ,m, x, mida }) => {
+
   return (
-    <div className="w-10 h-10 cursor-pointer border-2 border-solid" style={{backgroundColor: m}}></div>
+    <div className="w-10 h-10 cursor-pointer 
+    border-2 border-solid" style={{ backgroundColor: m }}
+    onClick={() => clickCell(x)}></div>
   )
 }
 
