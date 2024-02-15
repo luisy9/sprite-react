@@ -1,6 +1,6 @@
 import Celda from './Celda';
 
-const Canvas = ({ canvas, mida, segundoBucle }) => {
+const Canvas = ({ c, canvas, mida, segundoBucle }) => {
 
     return (
         <div className="">

@@ -9,7 +9,7 @@ const Papel = ({ canvas, mida }) => {
       <h1>Este es el papel</h1>
       <div className=''>
         {
-          primerBucle.map((c, index) => <Canvas canvas={canvas} mida={mida} key={index} segundoBucle={segundoBucle} />)
+          primerBucle.map((c, index) => <Canvas c={c} canvas={canvas} mida={mida} key={index} segundoBucle={segundoBucle} />)
         }
       </div>
     </div>
