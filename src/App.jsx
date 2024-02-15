@@ -1,19 +1,17 @@
 import { useState } from "react"
-import Celda from "./components/Celda";
+import Papel from './components/Papel';
 
 const App = () => {
 
-    const size = 10;
+    const mida = 5;
 
-    const [color, setColor] = useState('bg-green-200');
-    const [canvas, setCanvas] = useState();
+    const [color, setColor] = useState('#FF0000');
+    const [canvas, setCanvas] = useState(new Array(mida * mida).fill(color));
 
     return (
         <div>
-            {
-                
-            }
-            <Celda size={canvas} />
+            <h1>Sprites</h1>
+            <Papel canvas={canvas} mida={mida} />
         </div>
     )
 }
