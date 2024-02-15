@@ -6,6 +6,7 @@ const Canvas = ({ canvas, mida, clickCell }) => {
         <div className='flex justify-center'>
             <div className="grid grid-cols-10">
                 {canvas.map((m, index) => <Celda key={index}
+                    canvas={canvas}
                     x={index}
                     m={m}
                     mida={mida}

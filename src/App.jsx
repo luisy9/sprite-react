@@ -4,7 +4,6 @@ import Papel from './components/Papel';
 const App = () => {
 
     const mida = 10;
-
     const [color, setColor] = useState('#ff0000');
     const [canvas, setCanvas] = useState(new Array(mida * mida).fill(color));
 
@@ -14,7 +13,7 @@ const App = () => {
 
     function clickCell(x) {
         //Quiero hacerlo mandandoles solo la posicion de el array que toca modificar
-        
+
         //Le vuelvo a mandar un nuevo array
         setCanvas(canvas.map((c, index) => {
             if (x === index) {
@@ -27,7 +26,6 @@ const App = () => {
     function cleanCells() {
         setCanvas(canvas.map(e => '#ff0000'));
     }
-
 
 
     return (
