@@ -1,6 +1,6 @@
 const Celda = ({ m }) => {
   return (
-    <div className="table-cell w-7 h-7 cursor-pointer border-2 border-solid" style={{backgroundColor: m}}></div>
+    <div className="w-10 h-10 cursor-pointer border-2 border-solid" style={{backgroundColor: m}}></div>
   )
 }
 
